@@ -1,0 +1,353 @@
+/*Parcels and Placeholders************ */
+/*Mixins************ */
+/*Font size and styles */
+/*Transitons ************************** */
+/*Media Queries************************ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, del, dfn, img, ins,
+kbd, q, samp, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/*Remove the margin in all browsers (opinionated).*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #585858;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
+
+/*Add the correct display in IE 9-.*/
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/* Grouping content ========================================================================== */
+/*Add the correct display in IE 9-.*/
+/* 1. Add the correct display in IE.*/
+figcaption,
+figure,
+main {
+  display: block; }
+
+/* Add the correct margin in IE 8.*/
+figure {
+  margin: 1em 40px; }
+
+/*1. Add the correct box sizing in Firefox.*/
+/* 2. Show the overflow in Edge and IE.*/
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: #F2F2F2;
+  font-size: 1rem;
+  text-decoration: none;
+  outline: 0; }
+
+p {
+  margin: 0 0 20px 0; }
+
+/* MODULES - individual site components  *********** */
+/* MODULES STYLESHEET DIRECTORY FOR SITE */
+/* PAGES -header, footer, navigation, etc********* */
+/*Home-Navigation Header ================================================ */
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .navigation .logo {
+    height: 70px;
+    line-height: 70px;
+    float: left;
+    margin-top: 8px; }
+
+nav {
+  float: right; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    nav ul a {
+      height: 80px;
+      line-height: 80px;
+      padding: 0 20px;
+      font-weight: 700; }
+      nav ul a:hover {
+        color: #993300;
+        -webkit-transition: all 0.8s ease-out;
+        -o-transition: all 0.8s ease-out;
+        transition: all 0.8s ease-out;
+        border-bottom: 0.8px solid rgba(0, 0, 0, 0.2); }
+
+.toggle-nav {
+  float: right;
+  line-height: 80px;
+  display: none;
+  cursor: pointer;
+  -webkit-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out; }
+
+@media (max-width: 980px) {
+  nav {
+    position: absolute;
+    width: 100%;
+    height: calc(75vh - 45px);
+    background: rgba(0, 0, 0, 0.5);
+    top: 82px;
+    left: -100%;
+    -webkit-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; }
+    nav ul {
+      display: block;
+      text-align: center; }
+      nav ul a {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        display: block; }
+        nav ul a:hover {
+          color: #F2F2F2;
+          background: #993300; }
+  nav.active {
+    left: 0; }
+  .toggle-nav {
+    display: block; }
+    .toggle-nav.open span.m, .toggle-nav.open span.n, .toggle-nav.open span.u {
+      opacity: 1; }
+    .toggle-nav span.m, .toggle-nav span.n, .toggle-nav span.u {
+      font-size: 1.2rem;
+      opacity: 0;
+      -webkit-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out;
+      letter-spacing: 2.5px; }
+    .toggle-nav span.e {
+      display: inline-block;
+      height: 12px;
+      width: 17px; }
+      .toggle-nav span.e.btn-close span.bar:nth-child(1) {
+        -webkit-transition: all 0.8s ease-out;
+        -o-transition: all 0.8s ease-out;
+        transition: all 0.8s ease-out;
+        -webkit-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+        transform: rotate(40deg);
+        top: 4px; }
+      .toggle-nav span.e.btn-close span.bar:nth-child(2) {
+        opacity: 0;
+        -webkit-transition: all 0.8s ease-out;
+        -o-transition: all 0.8s ease-out;
+        transition: all 0.8s ease-out; }
+      .toggle-nav span.e.btn-close span.bar:nth-child(3) {
+        -webkit-transition: all 0.8s ease-out;
+        -o-transition: all 0.8s ease-out;
+        transition: all 0.8s ease-out;
+        -webkit-transform: rotate(-44deg);
+        -ms-transform: rotate(-44deg);
+        transform: rotate(-44deg);
+        bottom: 4px; }
+    .toggle-nav span.bar {
+      -webkit-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out;
+      position: relative;
+      display: block;
+      background: #212121;
+      border-radius: 1px;
+      border-bottom: 1px solid #616161;
+      width: 20px;
+      height: 1px; }
+      .toggle-nav span.bar:nth-child(2) {
+        margin: 3px 0; } }
+
+.toggle-nav:hover span.m, .toggle-nav:hover span.n, .toggle-nav:hover span.u {
+  opacity: 1;
+  -webkit-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease; }
+
+/*End Navigation Queries ============================================================== */
+/*End Navigation Settings ============================================================= */
+/*Home Banner Settings ================================================================ */
+#home-banner {
+  width: 100%;
+  height: 100vh;
+  background: url(../../src/images/home-bkgd.jpg) 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden; }
+  #home-banner .banner-text {
+    margin-top: 12rem;
+    padding-right: 7rem;
+    text-align: right; }
+    #home-banner .banner-text h1,
+    #home-banner .banner-text h2 {
+      margin: 0;
+      font-weight: 500;
+      color: #F2F2F2;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+      #home-banner .banner-text h1.lg-heading,
+      #home-banner .banner-text h2.lg-heading {
+        font-size: 5rem; }
+        #home-banner .banner-text h1.lg-heading .text-secondary,
+        #home-banner .banner-text h2.lg-heading .text-secondary {
+          color: #993300; }
+      #home-banner .banner-text h1.sm-heading,
+      #home-banner .banner-text h2.sm-heading {
+        margin-bottom: 2rem;
+        padding: 0.2rem;
+        background: rgba(242, 242, 242, 0.05); }
+    #home-banner .banner-text .home-icons {
+      letter-spacing: 1rem; }
+      #home-banner .banner-text .home-icons a:hover {
+        color: #993300;
+        -webkit-transition: all 0.8s ease-out;
+        -o-transition: all 0.8s ease-out;
+        transition: all 0.8s ease-out; }
+
+@media (max-width: 980px) {
+  .navigation {
+    padding: 0 20px; }
+  #home-banner {
+    width: 100%; }
+    #home-banner .banner-text {
+      text-align: right;
+      padding-right: 3rem; } }
+
+@media (max-width: 640px) {
+  #home-banner {
+    width: 100%; }
+    #home-banner .banner-text {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: center;
+      padding-right: 0; } }
+
+@media (max-width: 570px) {
+  #home-banner {
+    width: 100%; }
+    #home-banner .banner-text {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: center;
+      padding-right: 0; }
+      #home-banner .banner-text h1,
+      #home-banner .banner-text h2 {
+        margin: 0; }
+        #home-banner .banner-text h1.lg-heading,
+        #home-banner .banner-text h2.lg-heading {
+          font-size: 3rem; }
+          #home-banner .banner-text h1.lg-heading .text-secondary,
+          #home-banner .banner-text h2.lg-heading .text-secondary {
+            color: #993300; }
+        #home-banner .banner-text h1.sm-heading,
+        #home-banner .banner-text h2.sm-heading {
+          margin-bottom: 2rem;
+          padding: 0.2rem;
+          font-size: .8rem;
+          background: rgba(242, 242, 242, 0.05); }
+      #home-banner .banner-text .home-icons a {
+        font-size: .8rem; } }
+
+/*End Media Queries =============================================================== */
+/*End Home Banner ================================================================= */
+/*About Section =================================================================== */
+.about-header h3 {
+  margin: 3rem;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #993300;
+  text-align: center; }
+
+.about-header .face-lookup {
+  max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .about-header .face-lookup .face-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: url(/src/images/about-img.png);
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3; }
+  .about-header .face-lookup [class^="icon"] {
+    width: 100px;
+    height: 100px;
+    color: #993300;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #b4b4b4;
+    border-radius: 50%; }
+    .about-header .face-lookup [class^="icon"].icon-pencil {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1; }
+    .about-header .face-lookup [class^="icon"].icon-mouse {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2; }
+    .about-header .face-lookup [class^="icon"].icon-edge {
+      -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+      order: 4; }
+    .about-header .face-lookup [class^="icon"].icon-video {
+      -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+      order: 5; }
+
+p {
+  max-width: 620px;
+  padding: 0 20px;
+  margin: 50px auto;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300; }
+  p strong {
+    font-size: 14px;
+    font-weight: 700;
+    color: #993300; }
