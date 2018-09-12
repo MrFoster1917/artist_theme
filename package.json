@@ -4,12 +4,15 @@
   "description": "Basic web designer template",
   "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gh-pages"
   },
   "author": "Justin K. Foster",
   "license": "MIT",
+  "homepage": "https://mrfoster1917.github.io/artist_theme",
   "devDependencies": {
     "browser-sync": "^2.24.7",
+    "gh-pages": "^1.2.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-imagemin": "^4.1.0",
