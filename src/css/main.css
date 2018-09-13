@@ -58,7 +58,12 @@ hr {
   overflow: visible; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  text-decoration: none; }
+
+li {
+  list-style: none;
+  text-decoration: none; }
 
 a {
   color: #F2F2F2;
@@ -340,14 +345,14 @@ nav {
       -ms-flex-order: 5;
       order: 5; }
 
-p {
+.about-header p {
   max-width: 620px;
   padding: 0 20px;
   margin: 50px auto;
   font-size: 14px;
   text-align: center;
   font-weight: 300; }
-  p strong {
+  .about-header p strong {
     font-size: 14px;
     font-weight: 700;
     color: #993300; }
