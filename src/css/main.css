@@ -66,7 +66,7 @@ li {
   text-decoration: none; }
 
 a {
-  color: #F2F2F2;
+  color: #b4b4b4;
   font-size: 1rem;
   text-decoration: none;
   outline: 0; }
@@ -106,7 +106,7 @@ nav {
       padding: 0 20px;
       font-weight: 700; }
       nav ul a:hover {
-        color: #993300;
+        color: #66b750;
         -webkit-transition: all 0.8s ease-out;
         -o-transition: all 0.8s ease-out;
         transition: all 0.8s ease-out;
@@ -139,8 +139,8 @@ nav {
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         display: block; }
         nav ul a:hover {
-          color: #F2F2F2;
-          background: #993300; }
+          color: #585858;
+          background: #66b750; }
   nav.active {
     left: 0; }
   .toggle-nav {
@@ -205,7 +205,7 @@ nav {
 #home-banner {
   width: 100%;
   height: 100vh;
-  background: url(../../src/images/home-bkgd.jpg) 50% 50%;
+  background: url(../../src/images/home-bgd2.jpg) 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -218,7 +218,7 @@ nav {
     #home-banner .banner-text h2 {
       margin: 0;
       font-weight: 500;
-      color: #F2F2F2;
+      color: #b4b4b4;
       text-transform: uppercase;
       letter-spacing: 1px; }
       #home-banner .banner-text h1.lg-heading,
@@ -226,7 +226,7 @@ nav {
         font-size: 5rem; }
         #home-banner .banner-text h1.lg-heading .text-secondary,
         #home-banner .banner-text h2.lg-heading .text-secondary {
-          color: #993300; }
+          color: #66b750; }
       #home-banner .banner-text h1.sm-heading,
       #home-banner .banner-text h2.sm-heading {
         margin-bottom: 2rem;
@@ -235,7 +235,7 @@ nav {
     #home-banner .banner-text .home-icons {
       letter-spacing: 1rem; }
       #home-banner .banner-text .home-icons a:hover {
-        color: #993300;
+        color: #66b750;
         -webkit-transition: all 0.8s ease-out;
         -o-transition: all 0.8s ease-out;
         transition: all 0.8s ease-out; }
@@ -276,13 +276,13 @@ nav {
           font-size: 3rem; }
           #home-banner .banner-text h1.lg-heading .text-secondary,
           #home-banner .banner-text h2.lg-heading .text-secondary {
-            color: #993300; }
+            color: #66b750; }
         #home-banner .banner-text h1.sm-heading,
         #home-banner .banner-text h2.sm-heading {
           margin-bottom: 2rem;
           padding: 0.2rem;
           font-size: .8rem;
-          background: rgba(242, 242, 242, 0.05); }
+          background: rgba(180, 180, 180, 0.05); }
       #home-banner .banner-text .home-icons a {
         font-size: .8rem; } }
 
@@ -294,7 +294,7 @@ nav {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #993300;
+  color: #b4b4b4;
   text-align: center; }
 
 .about-header .face-lookup {
@@ -326,24 +326,28 @@ nav {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #b4b4b4;
+    background-color: #d1d1d1;
     border-radius: 50%; }
     .about-header .face-lookup [class^="icon"].icon-pencil {
       -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
-      order: 1; }
+      order: 1;
+      fill: #66b750; }
     .about-header .face-lookup [class^="icon"].icon-mouse {
       -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
-      order: 2; }
+      order: 2;
+      fill: #66b750; }
     .about-header .face-lookup [class^="icon"].icon-edge {
       -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
-      order: 4; }
+      order: 4;
+      fill: #66b750; }
     .about-header .face-lookup [class^="icon"].icon-video {
       -webkit-box-ordinal-group: 6;
       -ms-flex-order: 5;
-      order: 5; }
+      order: 5;
+      fill: #66b750; }
 
 .about-header p {
   max-width: 620px;
@@ -355,4 +359,4 @@ nav {
   .about-header p strong {
     font-size: 14px;
     font-weight: 700;
-    color: #993300; }
+    color: #66b750; }
