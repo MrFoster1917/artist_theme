@@ -360,3 +360,12 @@ nav {
     font-size: 14px;
     font-weight: 700;
     color: #66b750; }
+
+.about-header .skill-lockup {
+  max-width: 700px;
+  margin: 100px auto;
+  color: #66b750;
+  clear: both; }
+  .about-header .skill-lockup .skill-unit {
+    width: 350px;
+    float: left; }
