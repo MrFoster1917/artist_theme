@@ -362,10 +362,62 @@ nav {
     color: #66b750; }
 
 .about-header .skill-lockup {
-  max-width: 700px;
+  content: '';
+  max-width: 570px;
   margin: 100px auto;
+  text-align: center;
   color: #66b750;
-  clear: both; }
+  clear: both;
+  display: block; }
   .about-header .skill-lockup .skill-unit {
-    width: 350px;
+    width: 280px;
     float: left; }
+  .about-header .skill-lockup .skill-icons {
+    font-size: 0;
+    margin: 3px 0 30px; }
+    .about-header .skill-lockup .skill-icons span {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      background-color: #66b750;
+      margin-right: 8px;
+      border-radius: 50%; }
+      .about-header .skill-lockup .skill-icons span:after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        border-radius: 50%;
+        margin: 2px; }
+    .about-header .skill-lockup .skill-icons.skill-1 span:nth-child(n+1) {
+      background: #d1d1d1; }
+    .about-header .skill-lockup .skill-icons.skill-2 span:nth-child(n+2) {
+      background: #d1d1d1; }
+    .about-header .skill-lockup .skill-icons.skill-3 span:nth-child(n+3) {
+      background: #d1d1d1; }
+    .about-header .skill-lockup .skill-icons.skill-4 span:nth-child(n+4) {
+      background: #d1d1d1; }
+    .about-header .skill-lockup .skill-icons.skill-5 span:nth-child(n+5) {
+      background: #d1d1d1; }
+    .about-header .skill-lockup .skill-icons.skill-6 span:nth-child(n+6) {
+      background: #d1d1d1; }
+    .about-header .skill-lockup .skill-icons.skill-7 span:nth-child(n+7) {
+      background: #d1d1d1; }
+    .about-header .skill-lockup .skill-icons.skill-8 span:nth-child(n+8) {
+      background: #d1d1d1; }
+    .about-header .skill-lockup .skill-icons.skill-9 span:nth-child(n+9) {
+      background: #d1d1d1; }
+    .about-header .skill-lockup .skill-icons.skill-10 span:nth-child(n+10) {
+      background: #d1d1d1; }
+
+/*End About Section =================================================================== */
+/*Media Queries =============================================================== */
+@media screen and (max-width: 641px) {
+  .skill-lockup {
+    width: 220px; }
+    .skill-lockup .skill-unit {
+      width: 220px; } }
+
+/*End About Section =================================================================== */
+/*End Media Queries =============================================================== */
